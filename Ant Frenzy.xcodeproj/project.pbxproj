@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		682D95B71A9856E200DF07AD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682D95B61A9856E200DF07AD /* CoreImage.framework */; };
+		682F22E71AA3B8C200A759EB /* StorePageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 682F22E61AA3B8C200A759EB /* StorePageContentViewController.m */; };
+		687750D31A92964C00A1C3E2 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687750D21A92964C00A1C3E2 /* iAd.framework */; };
+		687750D51A92D01F00A1C3E2 /* LevelProgress.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687750D41A92D01F00A1C3E2 /* LevelProgress.plist */; };
+		687A379A1A91B6090001CD40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A37991A91B6090001CD40 /* main.m */; };
+		687A379D1A91B6090001CD40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A379C1A91B6090001CD40 /* AppDelegate.m */; };
+		687A37A81A91B60A0001CD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687A37A61A91B60A0001CD40 /* Main.storyboard */; };
+		687A37AA1A91B60B0001CD40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687A37A91A91B60B0001CD40 /* Images.xcassets */; };
+		687A37AD1A91B60B0001CD40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687A37AB1A91B60B0001CD40 /* LaunchScreen.xib */; };
+		687A37B91A91B60B0001CD40 /* Ant_FrenzyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A37B81A91B60B0001CD40 /* Ant_FrenzyTests.m */; };
+		687A37CD1A91BC6E0001CD40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A37CC1A91BC6E0001CD40 /* ViewController.m */; };
+		687A37D01A91BCBE0001CD40 /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A37CF1A91BCBE0001CD40 /* StoreViewController.m */; };
+		687A37D31A91BCD90001CD40 /* LevelSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A37D21A91BCD90001CD40 /* LevelSelectViewController.m */; };
+		687A380B1A91C0870001CD40 /* 80s Pop Beat 07.caf in Resources */ = {isa = PBXBuildFile; fileRef = 687A37D41A91C0870001CD40 /* 80s Pop Beat 07.caf */; };
+		687A380C1A91C0870001CD40 /* AntFrenzyTitle.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37D51A91C0870001CD40 /* AntFrenzyTitle.png */; };
+		687A380D1A91C0870001CD40 /* AntFrenzyTitleBasic.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37D61A91C0870001CD40 /* AntFrenzyTitleBasic.png */; };
+		687A380E1A91C0870001CD40 /* AntOnFire.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37D71A91C0870001CD40 /* AntOnFire.png */; };
+		687A380F1A91C0870001CD40 /* AntsBackground.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 687A37D81A91C0870001CD40 /* AntsBackground.mp3 */; };
+		687A38101A91C0870001CD40 /* ArmoredAnt.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37D91A91C0870001CD40 /* ArmoredAnt.atlas */; };
+		687A38111A91C0870001CD40 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37DA1A91C0870001CD40 /* Background.png */; };
+		687A38121A91C0870001CD40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 687A37DC1A91C0870001CD40 /* LaunchScreen.xib */; };
+		687A38131A91C0870001CD40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687A37DE1A91C0870001CD40 /* Main.storyboard */; };
+		687A38141A91C0870001CD40 /* Basic_Ant.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37E01A91C0870001CD40 /* Basic_Ant.atlas */; };
+		687A38171A91C0870001CD40 /* basicAnt.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37E31A91C0870001CD40 /* basicAnt.atlas */; };
+		687A38191A91C0870001CD40 /* bomb.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37E51A91C0870001CD40 /* bomb.atlas */; };
+		687A381A1A91C0870001CD40 /* BugSpray.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37E61A91C0870001CD40 /* BugSpray.atlas */; };
+		687A381B1A91C0870001CD40 /* FastAnt.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37E71A91C0870001CD40 /* FastAnt.atlas */; };
+		687A381C1A91C0870001CD40 /* Fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687A37E81A91C0870001CD40 /* Fire.wav */; };
+		687A381D1A91C0870001CD40 /* Fireball.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37E91A91C0870001CD40 /* Fireball.atlas */; };
+		687A381E1A91C0870001CD40 /* Fireball2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37EA1A91C0870001CD40 /* Fireball2.atlas */; };
+		687A381F1A91C0870001CD40 /* LeftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37EB1A91C0870001CD40 /* LeftArrow.png */; };
+		687A38201A91C0870001CD40 /* LevelIconNoStars.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37EC1A91C0870001CD40 /* LevelIconNoStars.png */; };
+		687A38211A91C0870001CD40 /* LevelIconOneStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37ED1A91C0870001CD40 /* LevelIconOneStar.png */; };
+		687A38221A91C0870001CD40 /* LevelIconThreeStars.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37EE1A91C0870001CD40 /* LevelIconThreeStars.png */; };
+		687A38231A91C0870001CD40 /* LevelIconTwoStars.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37EF1A91C0870001CD40 /* LevelIconTwoStars.png */; };
+		687A38251A91C0870001CD40 /* LevelsButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37F11A91C0870001CD40 /* LevelsButtonOff.png */; };
+		687A38261A91C0870001CD40 /* LevelsButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37F21A91C0870001CD40 /* LevelsButtonSelected.png */; };
+		687A38271A91C0870001CD40 /* Lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37F31A91C0870001CD40 /* Lock.png */; };
+		687A38281A91C0870001CD40 /* MockSentry.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37F41A91C0870001CD40 /* MockSentry.png */; };
+		687A38291A91C0870001CD40 /* MoneyAnt.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37F51A91C0870001CD40 /* MoneyAnt.atlas */; };
+		687A382A1A91C0870001CD40 /* MoneyBagAnt.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 687A37F61A91C0870001CD40 /* MoneyBagAnt.atlas */; };
+		687A382C1A91C0870001CD40 /* PlayButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37F81A91C0870001CD40 /* PlayButtonOff.png */; };
+		687A382D1A91C0870001CD40 /* PlayButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37F91A91C0870001CD40 /* PlayButtonSelected.png */; };
+		687A382E1A91C0870001CD40 /* RightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37FA1A91C0870001CD40 /* RightArrow.png */; };
+		687A38311A91C0870001CD40 /* ScoresButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37FD1A91C0870001CD40 /* ScoresButtonOff.png */; };
+		687A38321A91C0870001CD40 /* ScoresButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A37FE1A91C0870001CD40 /* ScoresButtonSelected.png */; };
+		687A38331A91C0870001CD40 /* Squish.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687A37FF1A91C0870001CD40 /* Squish.wav */; };
+		687A38341A91C0870001CD40 /* squished_ant.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A38001A91C0870001CD40 /* squished_ant.png */; };
+		687A38361A91C0870001CD40 /* StoreButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A38021A91C0870001CD40 /* StoreButtonOff.png */; };
+		687A38371A91C0870001CD40 /* StoreButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A38031A91C0870001CD40 /* StoreButtonSelected.png */; };
+		687A38391A91C0870001CD40 /* X2.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A38051A91C0870001CD40 /* X2.png */; };
+		687A383A1A91C0870001CD40 /* X3.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A38061A91C0870001CD40 /* X3.png */; };
+		687A383B1A91C0870001CD40 /* X4.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A38071A91C0870001CD40 /* X4.png */; };
+		687A383C1A91C0870001CD40 /* X5.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A38081A91C0870001CD40 /* X5.png */; };
+		687A383D1A91C0870001CD40 /* Zap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687A38091A91C0870001CD40 /* Zap.wav */; };
+		687A383E1A91C0870001CD40 /* ZappedAnt.png in Resources */ = {isa = PBXBuildFile; fileRef = 687A380A1A91C0870001CD40 /* ZappedAnt.png */; };
+		687A384B1A91CDA60001CD40 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A38401A91CDA60001CD40 /* MyScene.m */; };
+		687A384C1A91CDA60001CD40 /* LevelOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A38421A91CDA60001CD40 /* LevelOverScene.m */; };
+		687A384D1A91CDA60001CD40 /* Ant.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A38441A91CDA60001CD40 /* Ant.m */; };
+		687A384E1A91CDA60001CD40 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A38461A91CDA60001CD40 /* User.m */; };
+		687A384F1A91CDA60001CD40 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A38491A91CDA60001CD40 /* Level.m */; };
+		687A38501A91CDA60001CD40 /* weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A384A1A91CDA60001CD40 /* weapon.m */; };
+		687A38531A91D4230001CD40 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687A38521A91D4230001CD40 /* GameViewController.m */; };
+		687A38881A91E1FC0001CD40 /* userData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38541A91E1FC0001CD40 /* userData.plist */; };
+		687A38891A91E1FD0001CD40 /* Weapons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38551A91E1FC0001CD40 /* Weapons.plist */; };
+		687A388A1A91E1FD0001CD40 /* Level1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38561A91E1FC0001CD40 /* Level1.plist */; };
+		687A388B1A91E1FD0001CD40 /* Level2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38571A91E1FC0001CD40 /* Level2.plist */; };
+		687A388C1A91E1FD0001CD40 /* Level3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38581A91E1FC0001CD40 /* Level3.plist */; };
+		687A388E1A91E1FD0001CD40 /* Level5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A385A1A91E1FC0001CD40 /* Level5.plist */; };
+		687A388F1A91E1FD0001CD40 /* Level6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A385B1A91E1FC0001CD40 /* Level6.plist */; };
+		687A38901A91E1FD0001CD40 /* Level7.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A385C1A91E1FC0001CD40 /* Level7.plist */; };
+		687A38911A91E1FD0001CD40 /* Level8.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A385D1A91E1FC0001CD40 /* Level8.plist */; };
+		687A38921A91E1FD0001CD40 /* Level10.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A385E1A91E1FC0001CD40 /* Level10.plist */; };
+		687A38931A91E1FD0001CD40 /* Level9.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A385F1A91E1FC0001CD40 /* Level9.plist */; };
+		687A38941A91E1FD0001CD40 /* Level11.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38601A91E1FC0001CD40 /* Level11.plist */; };
+		687A38951A91E1FD0001CD40 /* Level12.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38611A91E1FC0001CD40 /* Level12.plist */; };
+		687A38961A91E1FD0001CD40 /* Level13.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38621A91E1FC0001CD40 /* Level13.plist */; };
+		687A38971A91E1FD0001CD40 /* Level14.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38631A91E1FC0001CD40 /* Level14.plist */; };
+		687A38981A91E1FD0001CD40 /* Level15.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38641A91E1FC0001CD40 /* Level15.plist */; };
+		687A38991A91E1FD0001CD40 /* Level16.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38651A91E1FC0001CD40 /* Level16.plist */; };
+		687A389A1A91E1FD0001CD40 /* Level17.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38661A91E1FC0001CD40 /* Level17.plist */; };
+		687A389B1A91E1FD0001CD40 /* Level18.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38671A91E1FC0001CD40 /* Level18.plist */; };
+		687A389C1A91E1FD0001CD40 /* Level19.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38681A91E1FC0001CD40 /* Level19.plist */; };
+		687A389D1A91E1FD0001CD40 /* Level20.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38691A91E1FC0001CD40 /* Level20.plist */; };
+		687A389E1A91E1FD0001CD40 /* Level21.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A386A1A91E1FC0001CD40 /* Level21.plist */; };
+		687A389F1A91E1FD0001CD40 /* Level22.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A386B1A91E1FC0001CD40 /* Level22.plist */; };
+		687A38A01A91E1FD0001CD40 /* Level23.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A386C1A91E1FC0001CD40 /* Level23.plist */; };
+		687A38A11A91E1FD0001CD40 /* Level24.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A386D1A91E1FC0001CD40 /* Level24.plist */; };
+		687A38A21A91E1FD0001CD40 /* Level25.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A386E1A91E1FC0001CD40 /* Level25.plist */; };
+		687A38A31A91E1FD0001CD40 /* Level26.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A386F1A91E1FC0001CD40 /* Level26.plist */; };
+		687A38A41A91E1FD0001CD40 /* Level27.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38701A91E1FC0001CD40 /* Level27.plist */; };
+		687A38A51A91E1FD0001CD40 /* Level28.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38711A91E1FC0001CD40 /* Level28.plist */; };
+		687A38A61A91E1FD0001CD40 /* Level29.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38721A91E1FC0001CD40 /* Level29.plist */; };
+		687A38A71A91E1FD0001CD40 /* Level30.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38731A91E1FC0001CD40 /* Level30.plist */; };
+		687A38A81A91E1FD0001CD40 /* Level31.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38741A91E1FC0001CD40 /* Level31.plist */; };
+		687A38A91A91E1FD0001CD40 /* Level32.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38751A91E1FC0001CD40 /* Level32.plist */; };
+		687A38AA1A91E1FD0001CD40 /* Level33.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38761A91E1FC0001CD40 /* Level33.plist */; };
+		687A38AB1A91E1FD0001CD40 /* Level34.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38771A91E1FC0001CD40 /* Level34.plist */; };
+		687A38AC1A91E1FD0001CD40 /* Level35.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38781A91E1FC0001CD40 /* Level35.plist */; };
+		687A38AD1A91E1FD0001CD40 /* Level36.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38791A91E1FC0001CD40 /* Level36.plist */; };
+		687A38AE1A91E1FD0001CD40 /* Level37.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A387A1A91E1FC0001CD40 /* Level37.plist */; };
+		687A38AF1A91E1FD0001CD40 /* Level38.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A387B1A91E1FC0001CD40 /* Level38.plist */; };
+		687A38B01A91E1FD0001CD40 /* Level39.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A387C1A91E1FC0001CD40 /* Level39.plist */; };
+		687A38B11A91E1FD0001CD40 /* Level40.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A387D1A91E1FC0001CD40 /* Level40.plist */; };
+		687A38B21A91E1FD0001CD40 /* Level41.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A387E1A91E1FC0001CD40 /* Level41.plist */; };
+		687A38B31A91E1FD0001CD40 /* Level42.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A387F1A91E1FC0001CD40 /* Level42.plist */; };
+		687A38B41A91E1FD0001CD40 /* Level43.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38801A91E1FC0001CD40 /* Level43.plist */; };
+		687A38B51A91E1FD0001CD40 /* Level44.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38811A91E1FC0001CD40 /* Level44.plist */; };
+		687A38B61A91E1FD0001CD40 /* Level45.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38821A91E1FC0001CD40 /* Level45.plist */; };
+		687A38B71A91E1FD0001CD40 /* Level46.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38831A91E1FC0001CD40 /* Level46.plist */; };
+		687A38B81A91E1FD0001CD40 /* Level47.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38841A91E1FC0001CD40 /* Level47.plist */; };
+		687A38B91A91E1FD0001CD40 /* Level48.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38851A91E1FC0001CD40 /* Level48.plist */; };
+		687A38BA1A91E1FD0001CD40 /* Level49.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38861A91E1FC0001CD40 /* Level49.plist */; };
+		687A38BB1A91E1FD0001CD40 /* Level50.plist in Resources */ = {isa = PBXBuildFile; fileRef = 687A38871A91E1FC0001CD40 /* Level50.plist */; };
+		D941293D1B9A2D21001C839B /* LevelOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D941293C1B9A2D21001C839B /* LevelOverViewController.m */; };
+		D960379C1AA647A600D6E2D7 /* WeaponsPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D960379B1AA647A600D6E2D7 /* WeaponsPageContentViewController.m */; };
+		D96484A81ACE3EC1003F4BE3 /* Buy.png in Resources */ = {isa = PBXBuildFile; fileRef = D96484A71ACE3EC1003F4BE3 /* Buy.png */; };
+		D96484AA1ACE3ED0003F4BE3 /* Buy1.png in Resources */ = {isa = PBXBuildFile; fileRef = D96484A91ACE3ED0003F4BE3 /* Buy1.png */; };
+		D98E51C41B926CCA0096A036 /* Background1Ground.png in Resources */ = {isa = PBXBuildFile; fileRef = D98E51C31B926CCA0096A036 /* Background1Ground.png */; };
+		D98E51C81B927BA20096A036 /* Background1Top.png in Resources */ = {isa = PBXBuildFile; fileRef = D98E51C71B927BA20096A036 /* Background1Top.png */; };
+		D98E51D21B9285910096A036 /* BugSprayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D98E51D11B9285910096A036 /* BugSprayIcon.png */; };
+		D98E51DF1B92870C0096A036 /* ZapperIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D98E51DB1B92870C0096A036 /* ZapperIcon.png */; };
+		D98E51E01B92870C0096A036 /* FireballsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D98E51DC1B92870C0096A036 /* FireballsIcon.png */; };
+		D98E51E11B92870C0096A036 /* BugSprayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D98E51DD1B92870C0096A036 /* BugSprayIcon.png */; };
+		D98E51E21B92870C0096A036 /* TapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D98E51DE1B92870C0096A036 /* TapIcon.png */; };
+		D98E51E41B9298590096A036 /* Background2Ground.png in Resources */ = {isa = PBXBuildFile; fileRef = D98E51E31B9298590096A036 /* Background2Ground.png */; };
+		D9CF9B431AF02FA4009900DD /* Coin.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9CF9B421AF02FA4009900DD /* Coin.atlas */; };
+		D9D16B901AC0CC0700AD7AC0 /* Coin1.png in Resources */ = {isa = PBXBuildFile; fileRef = D9D16B8F1AC0CC0700AD7AC0 /* Coin1.png */; };
+		D9D41EF61ABE140400CA3C3F /* ZapArea.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D41EF51ABE140400CA3C3F /* ZapArea.m */; };
+		D9D4CE961AA81B2800102AEE /* LevelSelectPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D4CE951AA81B2800102AEE /* LevelSelectPageContentViewController.m */; };
+		D9DB7C591AC8AF4B00FCB256 /* Zapper.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9DB7C581AC8AF4B00FCB256 /* Zapper.atlas */; };
+		D9DB7C5B1AC9EDB900FCB256 /* Number.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D9DB7C5A1AC9EDB900FCB256 /* Number.atlas */; };
+		D9E721E71B4353C9009C61C0 /* BadHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E721E61B4353C9009C61C0 /* BadHeart.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		687A37B31A91B60B0001CD40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 687A378C1A91B6080001CD40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 687A37931A91B6090001CD40;
+			remoteInfo = "Ant Frenzy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		682D95B61A9856E200DF07AD /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		682F22E51AA3B8C100A759EB /* StorePageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorePageContentViewController.h; sourceTree = "<group>"; };
+		682F22E61AA3B8C200A759EB /* StorePageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorePageContentViewController.m; sourceTree = "<group>"; };
+		687750D21A92964C00A1C3E2 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		687750D41A92D01F00A1C3E2 /* LevelProgress.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LevelProgress.plist; sourceTree = "<group>"; };
+		687A37941A91B6090001CD40 /* Ant Frenzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ant Frenzy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		687A37981A91B6090001CD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687A37991A91B6090001CD40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		687A379B1A91B6090001CD40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		687A379C1A91B6090001CD40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		687A37A71A91B60A0001CD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		687A37A91A91B60B0001CD40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		687A37AC1A91B60B0001CD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		687A37B21A91B60B0001CD40 /* Ant FrenzyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ant FrenzyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		687A37B71A91B60B0001CD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687A37B81A91B60B0001CD40 /* Ant_FrenzyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ant_FrenzyTests.m; sourceTree = "<group>"; };
+		687A37CB1A91BC6E0001CD40 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		687A37CC1A91BC6E0001CD40 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		687A37CE1A91BCBE0001CD40 /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		687A37CF1A91BCBE0001CD40 /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		687A37D11A91BCD90001CD40 /* LevelSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelectViewController.h; sourceTree = "<group>"; };
+		687A37D21A91BCD90001CD40 /* LevelSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelectViewController.m; sourceTree = "<group>"; };
+		687A37D41A91C0870001CD40 /* 80s Pop Beat 07.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "80s Pop Beat 07.caf"; sourceTree = "<group>"; };
+		687A37D51A91C0870001CD40 /* AntFrenzyTitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AntFrenzyTitle.png; sourceTree = "<group>"; };
+		687A37D61A91C0870001CD40 /* AntFrenzyTitleBasic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AntFrenzyTitleBasic.png; sourceTree = "<group>"; };
+		687A37D71A91C0870001CD40 /* AntOnFire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AntOnFire.png; sourceTree = "<group>"; };
+		687A37D81A91C0870001CD40 /* AntsBackground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AntsBackground.mp3; sourceTree = "<group>"; };
+		687A37D91A91C0870001CD40 /* ArmoredAnt.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ArmoredAnt.atlas; sourceTree = "<group>"; };
+		687A37DA1A91C0870001CD40 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		687A37DD1A91C0870001CD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		687A37DF1A91C0870001CD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		687A37E01A91C0870001CD40 /* Basic_Ant.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Basic_Ant.atlas; sourceTree = "<group>"; };
+		687A37E31A91C0870001CD40 /* basicAnt.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = basicAnt.atlas; sourceTree = "<group>"; };
+		687A37E51A91C0870001CD40 /* bomb.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bomb.atlas; sourceTree = "<group>"; };
+		687A37E61A91C0870001CD40 /* BugSpray.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BugSpray.atlas; sourceTree = "<group>"; };
+		687A37E71A91C0870001CD40 /* FastAnt.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = FastAnt.atlas; sourceTree = "<group>"; };
+		687A37E81A91C0870001CD40 /* Fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Fire.wav; sourceTree = "<group>"; };
+		687A37E91A91C0870001CD40 /* Fireball.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Fireball.atlas; sourceTree = "<group>"; };
+		687A37EA1A91C0870001CD40 /* Fireball2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Fireball2.atlas; sourceTree = "<group>"; };
+		687A37EB1A91C0870001CD40 /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftArrow.png; sourceTree = "<group>"; };
+		687A37EC1A91C0870001CD40 /* LevelIconNoStars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LevelIconNoStars.png; sourceTree = "<group>"; };
+		687A37ED1A91C0870001CD40 /* LevelIconOneStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LevelIconOneStar.png; sourceTree = "<group>"; };
+		687A37EE1A91C0870001CD40 /* LevelIconThreeStars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LevelIconThreeStars.png; sourceTree = "<group>"; };
+		687A37EF1A91C0870001CD40 /* LevelIconTwoStars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LevelIconTwoStars.png; sourceTree = "<group>"; };
+		687A37F11A91C0870001CD40 /* LevelsButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LevelsButtonOff.png; sourceTree = "<group>"; };
+		687A37F21A91C0870001CD40 /* LevelsButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LevelsButtonSelected.png; sourceTree = "<group>"; };
+		687A37F31A91C0870001CD40 /* Lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lock.png; sourceTree = "<group>"; };
+		687A37F41A91C0870001CD40 /* MockSentry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MockSentry.png; sourceTree = "<group>"; };
+		687A37F51A91C0870001CD40 /* MoneyAnt.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = MoneyAnt.atlas; sourceTree = "<group>"; };
+		687A37F61A91C0870001CD40 /* MoneyBagAnt.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = MoneyBagAnt.atlas; sourceTree = "<group>"; };
+		687A37F81A91C0870001CD40 /* PlayButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonOff.png; sourceTree = "<group>"; };
+		687A37F91A91C0870001CD40 /* PlayButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonSelected.png; sourceTree = "<group>"; };
+		687A37FA1A91C0870001CD40 /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightArrow.png; sourceTree = "<group>"; };
+		687A37FD1A91C0870001CD40 /* ScoresButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScoresButtonOff.png; sourceTree = "<group>"; };
+		687A37FE1A91C0870001CD40 /* ScoresButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScoresButtonSelected.png; sourceTree = "<group>"; };
+		687A37FF1A91C0870001CD40 /* Squish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Squish.wav; sourceTree = "<group>"; };
+		687A38001A91C0870001CD40 /* squished_ant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squished_ant.png; sourceTree = "<group>"; };
+		687A38021A91C0870001CD40 /* StoreButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StoreButtonOff.png; sourceTree = "<group>"; };
+		687A38031A91C0870001CD40 /* StoreButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StoreButtonSelected.png; sourceTree = "<group>"; };
+		687A38051A91C0870001CD40 /* X2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X2.png; sourceTree = "<group>"; };
+		687A38061A91C0870001CD40 /* X3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X3.png; sourceTree = "<group>"; };
+		687A38071A91C0870001CD40 /* X4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X4.png; sourceTree = "<group>"; };
+		687A38081A91C0870001CD40 /* X5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X5.png; sourceTree = "<group>"; };
+		687A38091A91C0870001CD40 /* Zap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Zap.wav; sourceTree = "<group>"; };
+		687A380A1A91C0870001CD40 /* ZappedAnt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZappedAnt.png; sourceTree = "<group>"; };
+		687A383F1A91CDA60001CD40 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		687A38401A91CDA60001CD40 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		687A38411A91CDA60001CD40 /* LevelOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelOverScene.h; sourceTree = "<group>"; };
+		687A38421A91CDA60001CD40 /* LevelOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelOverScene.m; sourceTree = "<group>"; };
+		687A38431A91CDA60001CD40 /* Ant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ant.h; sourceTree = "<group>"; };
+		687A38441A91CDA60001CD40 /* Ant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ant.m; sourceTree = "<group>"; };
+		687A38451A91CDA60001CD40 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		687A38461A91CDA60001CD40 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		687A38471A91CDA60001CD40 /* weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weapon.h; sourceTree = "<group>"; };
+		687A38481A91CDA60001CD40 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		687A38491A91CDA60001CD40 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
+		687A384A1A91CDA60001CD40 /* weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weapon.m; sourceTree = "<group>"; };
+		687A38511A91D4230001CD40 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		687A38521A91D4230001CD40 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		687A38541A91E1FC0001CD40 /* userData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userData.plist; sourceTree = "<group>"; };
+		687A38551A91E1FC0001CD40 /* Weapons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Weapons.plist; sourceTree = "<group>"; };
+		687A38561A91E1FC0001CD40 /* Level1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level1.plist; sourceTree = "<group>"; };
+		687A38571A91E1FC0001CD40 /* Level2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level2.plist; sourceTree = "<group>"; };
+		687A38581A91E1FC0001CD40 /* Level3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level3.plist; sourceTree = "<group>"; };
+		687A385A1A91E1FC0001CD40 /* Level5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level5.plist; sourceTree = "<group>"; };
+		687A385B1A91E1FC0001CD40 /* Level6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level6.plist; sourceTree = "<group>"; };
+		687A385C1A91E1FC0001CD40 /* Level7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level7.plist; sourceTree = "<group>"; };
+		687A385D1A91E1FC0001CD40 /* Level8.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level8.plist; sourceTree = "<group>"; };
+		687A385E1A91E1FC0001CD40 /* Level10.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level10.plist; sourceTree = "<group>"; };
+		687A385F1A91E1FC0001CD40 /* Level9.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level9.plist; sourceTree = "<group>"; };
+		687A38601A91E1FC0001CD40 /* Level11.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level11.plist; sourceTree = "<group>"; };
+		687A38611A91E1FC0001CD40 /* Level12.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level12.plist; sourceTree = "<group>"; };
+		687A38621A91E1FC0001CD40 /* Level13.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level13.plist; sourceTree = "<group>"; };
+		687A38631A91E1FC0001CD40 /* Level14.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level14.plist; sourceTree = "<group>"; };
+		687A38641A91E1FC0001CD40 /* Level15.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level15.plist; sourceTree = "<group>"; };
+		687A38651A91E1FC0001CD40 /* Level16.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level16.plist; sourceTree = "<group>"; };
+		687A38661A91E1FC0001CD40 /* Level17.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level17.plist; sourceTree = "<group>"; };
+		687A38671A91E1FC0001CD40 /* Level18.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level18.plist; sourceTree = "<group>"; };
+		687A38681A91E1FC0001CD40 /* Level19.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level19.plist; sourceTree = "<group>"; };
+		687A38691A91E1FC0001CD40 /* Level20.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level20.plist; sourceTree = "<group>"; };
+		687A386A1A91E1FC0001CD40 /* Level21.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level21.plist; sourceTree = "<group>"; };
+		687A386B1A91E1FC0001CD40 /* Level22.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level22.plist; sourceTree = "<group>"; };
+		687A386C1A91E1FC0001CD40 /* Level23.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level23.plist; sourceTree = "<group>"; };
+		687A386D1A91E1FC0001CD40 /* Level24.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level24.plist; sourceTree = "<group>"; };
+		687A386E1A91E1FC0001CD40 /* Level25.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level25.plist; sourceTree = "<group>"; };
+		687A386F1A91E1FC0001CD40 /* Level26.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level26.plist; sourceTree = "<group>"; };
+		687A38701A91E1FC0001CD40 /* Level27.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level27.plist; sourceTree = "<group>"; };
+		687A38711A91E1FC0001CD40 /* Level28.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level28.plist; sourceTree = "<group>"; };
+		687A38721A91E1FC0001CD40 /* Level29.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level29.plist; sourceTree = "<group>"; };
+		687A38731A91E1FC0001CD40 /* Level30.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level30.plist; sourceTree = "<group>"; };
+		687A38741A91E1FC0001CD40 /* Level31.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level31.plist; sourceTree = "<group>"; };
+		687A38751A91E1FC0001CD40 /* Level32.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level32.plist; sourceTree = "<group>"; };
+		687A38761A91E1FC0001CD40 /* Level33.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level33.plist; sourceTree = "<group>"; };
+		687A38771A91E1FC0001CD40 /* Level34.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level34.plist; sourceTree = "<group>"; };
+		687A38781A91E1FC0001CD40 /* Level35.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level35.plist; sourceTree = "<group>"; };
+		687A38791A91E1FC0001CD40 /* Level36.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level36.plist; sourceTree = "<group>"; };
+		687A387A1A91E1FC0001CD40 /* Level37.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level37.plist; sourceTree = "<group>"; };
+		687A387B1A91E1FC0001CD40 /* Level38.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level38.plist; sourceTree = "<group>"; };
+		687A387C1A91E1FC0001CD40 /* Level39.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level39.plist; sourceTree = "<group>"; };
+		687A387D1A91E1FC0001CD40 /* Level40.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level40.plist; sourceTree = "<group>"; };
+		687A387E1A91E1FC0001CD40 /* Level41.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level41.plist; sourceTree = "<group>"; };
+		687A387F1A91E1FC0001CD40 /* Level42.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level42.plist; sourceTree = "<group>"; };
+		687A38801A91E1FC0001CD40 /* Level43.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level43.plist; sourceTree = "<group>"; };
+		687A38811A91E1FC0001CD40 /* Level44.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level44.plist; sourceTree = "<group>"; };
+		687A38821A91E1FC0001CD40 /* Level45.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level45.plist; sourceTree = "<group>"; };
+		687A38831A91E1FC0001CD40 /* Level46.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level46.plist; sourceTree = "<group>"; };
+		687A38841A91E1FC0001CD40 /* Level47.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level47.plist; sourceTree = "<group>"; };
+		687A38851A91E1FC0001CD40 /* Level48.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level48.plist; sourceTree = "<group>"; };
+		687A38861A91E1FC0001CD40 /* Level49.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level49.plist; sourceTree = "<group>"; };
+		687A38871A91E1FC0001CD40 /* Level50.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level50.plist; sourceTree = "<group>"; };
+		D941293B1B9A2D21001C839B /* LevelOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelOverViewController.h; sourceTree = "<group>"; };
+		D941293C1B9A2D21001C839B /* LevelOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelOverViewController.m; sourceTree = "<group>"; };
+		D960379A1AA647A600D6E2D7 /* WeaponsPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaponsPageContentViewController.h; sourceTree = "<group>"; };
+		D960379B1AA647A600D6E2D7 /* WeaponsPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeaponsPageContentViewController.m; sourceTree = "<group>"; };
+		D96484A71ACE3EC1003F4BE3 /* Buy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Buy.png; sourceTree = "<group>"; };
+		D96484A91ACE3ED0003F4BE3 /* Buy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Buy1.png; sourceTree = "<group>"; };
+		D98E51C31B926CCA0096A036 /* Background1Ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background1Ground.png; sourceTree = "<group>"; };
+		D98E51C71B927BA20096A036 /* Background1Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background1Top.png; sourceTree = "<group>"; };
+		D98E51D11B9285910096A036 /* BugSprayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BugSprayIcon.png; path = Number.atlas/BugSprayIcon.png; sourceTree = "<group>"; };
+		D98E51DB1B92870C0096A036 /* ZapperIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZapperIcon.png; sourceTree = "<group>"; };
+		D98E51DC1B92870C0096A036 /* FireballsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FireballsIcon.png; sourceTree = "<group>"; };
+		D98E51DD1B92870C0096A036 /* BugSprayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BugSprayIcon.png; sourceTree = "<group>"; };
+		D98E51DE1B92870C0096A036 /* TapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TapIcon.png; sourceTree = "<group>"; };
+		D98E51E31B9298590096A036 /* Background2Ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background2Ground.png; sourceTree = "<group>"; };
+		D9CF9B421AF02FA4009900DD /* Coin.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Coin.atlas; sourceTree = "<group>"; };
+		D9D16B8F1AC0CC0700AD7AC0 /* Coin1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coin1.png; sourceTree = "<group>"; };
+		D9D41EF41ABE140400CA3C3F /* ZapArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZapArea.h; sourceTree = "<group>"; };
+		D9D41EF51ABE140400CA3C3F /* ZapArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZapArea.m; sourceTree = "<group>"; };
+		D9D4CE941AA81B2800102AEE /* LevelSelectPageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelectPageContentViewController.h; sourceTree = "<group>"; };
+		D9D4CE951AA81B2800102AEE /* LevelSelectPageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelectPageContentViewController.m; sourceTree = "<group>"; };
+		D9DB7C581AC8AF4B00FCB256 /* Zapper.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Zapper.atlas; sourceTree = "<group>"; };
+		D9DB7C5A1AC9EDB900FCB256 /* Number.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Number.atlas; sourceTree = "<group>"; };
+		D9E721E61B4353C9009C61C0 /* BadHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BadHeart.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		687A37911A91B6090001CD40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682D95B71A9856E200DF07AD /* CoreImage.framework in Frameworks */,
+				687750D31A92964C00A1C3E2 /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687A37AF1A91B60B0001CD40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		687A378B1A91B6070001CD40 = {
+			isa = PBXGroup;
+			children = (
+				682D95B61A9856E200DF07AD /* CoreImage.framework */,
+				687750D21A92964C00A1C3E2 /* iAd.framework */,
+				687A37961A91B6090001CD40 /* Ant Frenzy */,
+				687A37B51A91B60B0001CD40 /* Ant FrenzyTests */,
+				687A37951A91B6090001CD40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		687A37951A91B6090001CD40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				687A37941A91B6090001CD40 /* Ant Frenzy.app */,
+				687A37B21A91B60B0001CD40 /* Ant FrenzyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		687A37961A91B6090001CD40 /* Ant Frenzy */ = {
+			isa = PBXGroup;
+			children = (
+				687A379B1A91B6090001CD40 /* AppDelegate.h */,
+				687A379C1A91B6090001CD40 /* AppDelegate.m */,
+				687A37CB1A91BC6E0001CD40 /* ViewController.h */,
+				687A37CC1A91BC6E0001CD40 /* ViewController.m */,
+				687A37CE1A91BCBE0001CD40 /* StoreViewController.h */,
+				687A37CF1A91BCBE0001CD40 /* StoreViewController.m */,
+				682F22E51AA3B8C100A759EB /* StorePageContentViewController.h */,
+				682F22E61AA3B8C200A759EB /* StorePageContentViewController.m */,
+				687A37D11A91BCD90001CD40 /* LevelSelectViewController.h */,
+				D98E51E31B9298590096A036 /* Background2Ground.png */,
+				687A37D21A91BCD90001CD40 /* LevelSelectViewController.m */,
+				D9D4CE941AA81B2800102AEE /* LevelSelectPageContentViewController.h */,
+				D9D4CE951AA81B2800102AEE /* LevelSelectPageContentViewController.m */,
+				687A37A61A91B60A0001CD40 /* Main.storyboard */,
+				687A38511A91D4230001CD40 /* GameViewController.h */,
+				687A38521A91D4230001CD40 /* GameViewController.m */,
+				687A383F1A91CDA60001CD40 /* MyScene.h */,
+				687A38401A91CDA60001CD40 /* MyScene.m */,
+				687A38411A91CDA60001CD40 /* LevelOverScene.h */,
+				687A38421A91CDA60001CD40 /* LevelOverScene.m */,
+				D941293B1B9A2D21001C839B /* LevelOverViewController.h */,
+				D941293C1B9A2D21001C839B /* LevelOverViewController.m */,
+				D960379A1AA647A600D6E2D7 /* WeaponsPageContentViewController.h */,
+				D960379B1AA647A600D6E2D7 /* WeaponsPageContentViewController.m */,
+				687A38431A91CDA60001CD40 /* Ant.h */,
+				687A38441A91CDA60001CD40 /* Ant.m */,
+				687A38451A91CDA60001CD40 /* User.h */,
+				687A38461A91CDA60001CD40 /* User.m */,
+				687A38481A91CDA60001CD40 /* Level.h */,
+				687A38491A91CDA60001CD40 /* Level.m */,
+				687A38471A91CDA60001CD40 /* weapon.h */,
+				687A384A1A91CDA60001CD40 /* weapon.m */,
+				D9D41EF41ABE140400CA3C3F /* ZapArea.h */,
+				D9D41EF51ABE140400CA3C3F /* ZapArea.m */,
+				687A37A91A91B60B0001CD40 /* Images.xcassets */,
+				687A37AB1A91B60B0001CD40 /* LaunchScreen.xib */,
+				687A37971A91B6090001CD40 /* Supporting Files */,
+			);
+			path = "Ant Frenzy";
+			sourceTree = "<group>";
+		};
+		687A37971A91B6090001CD40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9E721E61B4353C9009C61C0 /* BadHeart.png */,
+				D9CF9B421AF02FA4009900DD /* Coin.atlas */,
+				D96484A91ACE3ED0003F4BE3 /* Buy1.png */,
+				D96484A71ACE3EC1003F4BE3 /* Buy.png */,
+				D9DB7C5A1AC9EDB900FCB256 /* Number.atlas */,
+				D9DB7C581AC8AF4B00FCB256 /* Zapper.atlas */,
+				D9D16B8F1AC0CC0700AD7AC0 /* Coin1.png */,
+				D98E51D11B9285910096A036 /* BugSprayIcon.png */,
+				687A37D41A91C0870001CD40 /* 80s Pop Beat 07.caf */,
+				687A37D51A91C0870001CD40 /* AntFrenzyTitle.png */,
+				687A37D61A91C0870001CD40 /* AntFrenzyTitleBasic.png */,
+				687A37D71A91C0870001CD40 /* AntOnFire.png */,
+				D98E51C31B926CCA0096A036 /* Background1Ground.png */,
+				D98E51DB1B92870C0096A036 /* ZapperIcon.png */,
+				D98E51DC1B92870C0096A036 /* FireballsIcon.png */,
+				D98E51DD1B92870C0096A036 /* BugSprayIcon.png */,
+				D98E51DE1B92870C0096A036 /* TapIcon.png */,
+				D98E51C71B927BA20096A036 /* Background1Top.png */,
+				687A37D81A91C0870001CD40 /* AntsBackground.mp3 */,
+				687A37D91A91C0870001CD40 /* ArmoredAnt.atlas */,
+				687A37DA1A91C0870001CD40 /* Background.png */,
+				687A37DB1A91C0870001CD40 /* Base.lproj */,
+				687A37E01A91C0870001CD40 /* Basic_Ant.atlas */,
+				687A37E31A91C0870001CD40 /* basicAnt.atlas */,
+				687A37E51A91C0870001CD40 /* bomb.atlas */,
+				687A37E61A91C0870001CD40 /* BugSpray.atlas */,
+				687A37E71A91C0870001CD40 /* FastAnt.atlas */,
+				687A37E81A91C0870001CD40 /* Fire.wav */,
+				687A37E91A91C0870001CD40 /* Fireball.atlas */,
+				687A37EA1A91C0870001CD40 /* Fireball2.atlas */,
+				687A37EB1A91C0870001CD40 /* LeftArrow.png */,
+				687A37EC1A91C0870001CD40 /* LevelIconNoStars.png */,
+				687A37ED1A91C0870001CD40 /* LevelIconOneStar.png */,
+				687A37EE1A91C0870001CD40 /* LevelIconThreeStars.png */,
+				687A37EF1A91C0870001CD40 /* LevelIconTwoStars.png */,
+				687A37F11A91C0870001CD40 /* LevelsButtonOff.png */,
+				687A37F21A91C0870001CD40 /* LevelsButtonSelected.png */,
+				687A37F31A91C0870001CD40 /* Lock.png */,
+				687A37F41A91C0870001CD40 /* MockSentry.png */,
+				687A37F51A91C0870001CD40 /* MoneyAnt.atlas */,
+				687A37F61A91C0870001CD40 /* MoneyBagAnt.atlas */,
+				687A37F81A91C0870001CD40 /* PlayButtonOff.png */,
+				687A37F91A91C0870001CD40 /* PlayButtonSelected.png */,
+				687A37FA1A91C0870001CD40 /* RightArrow.png */,
+				687A37FD1A91C0870001CD40 /* ScoresButtonOff.png */,
+				687A37FE1A91C0870001CD40 /* ScoresButtonSelected.png */,
+				687A37FF1A91C0870001CD40 /* Squish.wav */,
+				687A38001A91C0870001CD40 /* squished_ant.png */,
+				687A38021A91C0870001CD40 /* StoreButtonOff.png */,
+				687A38031A91C0870001CD40 /* StoreButtonSelected.png */,
+				687A38051A91C0870001CD40 /* X2.png */,
+				687A38061A91C0870001CD40 /* X3.png */,
+				687A38071A91C0870001CD40 /* X4.png */,
+				687A38081A91C0870001CD40 /* X5.png */,
+				687A38091A91C0870001CD40 /* Zap.wav */,
+				687A380A1A91C0870001CD40 /* ZappedAnt.png */,
+				687A37981A91B6090001CD40 /* Info.plist */,
+				687A37991A91B6090001CD40 /* main.m */,
+				687750D41A92D01F00A1C3E2 /* LevelProgress.plist */,
+				687A38541A91E1FC0001CD40 /* userData.plist */,
+				687A38551A91E1FC0001CD40 /* Weapons.plist */,
+				687A38561A91E1FC0001CD40 /* Level1.plist */,
+				687A38571A91E1FC0001CD40 /* Level2.plist */,
+				687A38581A91E1FC0001CD40 /* Level3.plist */,
+				687A385A1A91E1FC0001CD40 /* Level5.plist */,
+				687A385B1A91E1FC0001CD40 /* Level6.plist */,
+				687A385C1A91E1FC0001CD40 /* Level7.plist */,
+				687A385D1A91E1FC0001CD40 /* Level8.plist */,
+				687A385E1A91E1FC0001CD40 /* Level10.plist */,
+				687A385F1A91E1FC0001CD40 /* Level9.plist */,
+				687A38601A91E1FC0001CD40 /* Level11.plist */,
+				687A38611A91E1FC0001CD40 /* Level12.plist */,
+				687A38621A91E1FC0001CD40 /* Level13.plist */,
+				687A38631A91E1FC0001CD40 /* Level14.plist */,
+				687A38641A91E1FC0001CD40 /* Level15.plist */,
+				687A38651A91E1FC0001CD40 /* Level16.plist */,
+				687A38661A91E1FC0001CD40 /* Level17.plist */,
+				687A38671A91E1FC0001CD40 /* Level18.plist */,
+				687A38681A91E1FC0001CD40 /* Level19.plist */,
+				687A38691A91E1FC0001CD40 /* Level20.plist */,
+				687A386A1A91E1FC0001CD40 /* Level21.plist */,
+				687A386B1A91E1FC0001CD40 /* Level22.plist */,
+				687A386C1A91E1FC0001CD40 /* Level23.plist */,
+				687A386D1A91E1FC0001CD40 /* Level24.plist */,
+				687A386E1A91E1FC0001CD40 /* Level25.plist */,
+				687A386F1A91E1FC0001CD40 /* Level26.plist */,
+				687A38701A91E1FC0001CD40 /* Level27.plist */,
+				687A38711A91E1FC0001CD40 /* Level28.plist */,
+				687A38721A91E1FC0001CD40 /* Level29.plist */,
+				687A38731A91E1FC0001CD40 /* Level30.plist */,
+				687A38741A91E1FC0001CD40 /* Level31.plist */,
+				687A38751A91E1FC0001CD40 /* Level32.plist */,
+				687A38761A91E1FC0001CD40 /* Level33.plist */,
+				687A38771A91E1FC0001CD40 /* Level34.plist */,
+				687A38781A91E1FC0001CD40 /* Level35.plist */,
+				687A38791A91E1FC0001CD40 /* Level36.plist */,
+				687A387A1A91E1FC0001CD40 /* Level37.plist */,
+				687A387B1A91E1FC0001CD40 /* Level38.plist */,
+				687A387C1A91E1FC0001CD40 /* Level39.plist */,
+				687A387D1A91E1FC0001CD40 /* Level40.plist */,
+				687A387E1A91E1FC0001CD40 /* Level41.plist */,
+				687A387F1A91E1FC0001CD40 /* Level42.plist */,
+				687A38801A91E1FC0001CD40 /* Level43.plist */,
+				687A38811A91E1FC0001CD40 /* Level44.plist */,
+				687A38821A91E1FC0001CD40 /* Level45.plist */,
+				687A38831A91E1FC0001CD40 /* Level46.plist */,
+				687A38841A91E1FC0001CD40 /* Level47.plist */,
+				687A38851A91E1FC0001CD40 /* Level48.plist */,
+				687A38861A91E1FC0001CD40 /* Level49.plist */,
+				687A38871A91E1FC0001CD40 /* Level50.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		687A37B51A91B60B0001CD40 /* Ant FrenzyTests */ = {
+			isa = PBXGroup;
+			children = (
+				687A37B81A91B60B0001CD40 /* Ant_FrenzyTests.m */,
+				687A37B61A91B60B0001CD40 /* Supporting Files */,
+			);
+			path = "Ant FrenzyTests";
+			sourceTree = "<group>";
+		};
+		687A37B61A91B60B0001CD40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				687A37B71A91B60B0001CD40 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		687A37DB1A91C0870001CD40 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				687A37DC1A91C0870001CD40 /* LaunchScreen.xib */,
+				687A37DE1A91C0870001CD40 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		687A37931A91B6090001CD40 /* Ant Frenzy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687A37BC1A91B60B0001CD40 /* Build configuration list for PBXNativeTarget "Ant Frenzy" */;
+			buildPhases = (
+				687A37901A91B6090001CD40 /* Sources */,
+				687A37911A91B6090001CD40 /* Frameworks */,
+				687A37921A91B6090001CD40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ant Frenzy";
+			productName = "Ant Frenzy";
+			productReference = 687A37941A91B6090001CD40 /* Ant Frenzy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		687A37B11A91B60B0001CD40 /* Ant FrenzyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687A37BF1A91B60B0001CD40 /* Build configuration list for PBXNativeTarget "Ant FrenzyTests" */;
+			buildPhases = (
+				687A37AE1A91B60B0001CD40 /* Sources */,
+				687A37AF1A91B60B0001CD40 /* Frameworks */,
+				687A37B01A91B60B0001CD40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				687A37B41A91B60B0001CD40 /* PBXTargetDependency */,
+			);
+			name = "Ant FrenzyTests";
+			productName = "Ant FrenzyTests";
+			productReference = 687A37B21A91B60B0001CD40 /* Ant FrenzyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		687A378C1A91B6080001CD40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Third Boot";
+				TargetAttributes = {
+					687A37931A91B6090001CD40 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = JQNK74493B;
+					};
+					687A37B11A91B60B0001CD40 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 687A37931A91B6090001CD40;
+					};
+				};
+			};
+			buildConfigurationList = 687A378F1A91B6080001CD40 /* Build configuration list for PBXProject "Ant Frenzy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 687A378B1A91B6070001CD40;
+			productRefGroup = 687A37951A91B6090001CD40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				687A37931A91B6090001CD40 /* Ant Frenzy */,
+				687A37B11A91B60B0001CD40 /* Ant FrenzyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		687A37921A91B6090001CD40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687A38251A91C0870001CD40 /* LevelsButtonOff.png in Resources */,
+				687A38371A91C0870001CD40 /* StoreButtonSelected.png in Resources */,
+				687A38A81A91E1FD0001CD40 /* Level31.plist in Resources */,
+				687A388A1A91E1FD0001CD40 /* Level1.plist in Resources */,
+				687A38101A91C0870001CD40 /* ArmoredAnt.atlas in Resources */,
+				687A382E1A91C0870001CD40 /* RightArrow.png in Resources */,
+				687A38B21A91E1FD0001CD40 /* Level41.plist in Resources */,
+				687A38AD1A91E1FD0001CD40 /* Level36.plist in Resources */,
+				687A38391A91C0870001CD40 /* X2.png in Resources */,
+				687A383A1A91C0870001CD40 /* X3.png in Resources */,
+				D9E721E71B4353C9009C61C0 /* BadHeart.png in Resources */,
+				D9DB7C5B1AC9EDB900FCB256 /* Number.atlas in Resources */,
+				687A38951A91E1FD0001CD40 /* Level12.plist in Resources */,
+				687A38891A91E1FD0001CD40 /* Weapons.plist in Resources */,
+				687A38231A91C0870001CD40 /* LevelIconTwoStars.png in Resources */,
+				687A38111A91C0870001CD40 /* Background.png in Resources */,
+				687A38191A91C0870001CD40 /* bomb.atlas in Resources */,
+				D9CF9B431AF02FA4009900DD /* Coin.atlas in Resources */,
+				687A37AD1A91B60B0001CD40 /* LaunchScreen.xib in Resources */,
+				687A38BA1A91E1FD0001CD40 /* Level49.plist in Resources */,
+				D96484A81ACE3EC1003F4BE3 /* Buy.png in Resources */,
+				687A38361A91C0870001CD40 /* StoreButtonOff.png in Resources */,
+				687A38281A91C0870001CD40 /* MockSentry.png in Resources */,
+				687A38221A91C0870001CD40 /* LevelIconThreeStars.png in Resources */,
+				687A38881A91E1FC0001CD40 /* userData.plist in Resources */,
+				687A38321A91C0870001CD40 /* ScoresButtonSelected.png in Resources */,
+				687A381B1A91C0870001CD40 /* FastAnt.atlas in Resources */,
+				D98E51C41B926CCA0096A036 /* Background1Ground.png in Resources */,
+				687A38341A91C0870001CD40 /* squished_ant.png in Resources */,
+				687A38901A91E1FD0001CD40 /* Level7.plist in Resources */,
+				687A38931A91E1FD0001CD40 /* Level9.plist in Resources */,
+				687A38941A91E1FD0001CD40 /* Level11.plist in Resources */,
+				687A38971A91E1FD0001CD40 /* Level14.plist in Resources */,
+				687A389A1A91E1FD0001CD40 /* Level17.plist in Resources */,
+				687A389B1A91E1FD0001CD40 /* Level18.plist in Resources */,
+				687A389F1A91E1FD0001CD40 /* Level22.plist in Resources */,
+				687A38A11A91E1FD0001CD40 /* Level24.plist in Resources */,
+				687A38AC1A91E1FD0001CD40 /* Level35.plist in Resources */,
+				687A38B11A91E1FD0001CD40 /* Level40.plist in Resources */,
+				D98E51E41B9298590096A036 /* Background2Ground.png in Resources */,
+				687A38B41A91E1FD0001CD40 /* Level43.plist in Resources */,
+				687A382D1A91C0870001CD40 /* PlayButtonSelected.png in Resources */,
+				D98E51E11B92870C0096A036 /* BugSprayIcon.png in Resources */,
+				687A382A1A91C0870001CD40 /* MoneyBagAnt.atlas in Resources */,
+				687A38AF1A91E1FD0001CD40 /* Level38.plist in Resources */,
+				687A38331A91C0870001CD40 /* Squish.wav in Resources */,
+				687A38B81A91E1FD0001CD40 /* Level47.plist in Resources */,
+				D98E51E01B92870C0096A036 /* FireballsIcon.png in Resources */,
+				687A37AA1A91B60B0001CD40 /* Images.xcassets in Resources */,
+				D98E51DF1B92870C0096A036 /* ZapperIcon.png in Resources */,
+				D96484AA1ACE3ED0003F4BE3 /* Buy1.png in Resources */,
+				687A38A71A91E1FD0001CD40 /* Level30.plist in Resources */,
+				687A38921A91E1FD0001CD40 /* Level10.plist in Resources */,
+				687A38A51A91E1FD0001CD40 /* Level28.plist in Resources */,
+				687A38AE1A91E1FD0001CD40 /* Level37.plist in Resources */,
+				687A38AB1A91E1FD0001CD40 /* Level34.plist in Resources */,
+				687A38141A91C0870001CD40 /* Basic_Ant.atlas in Resources */,
+				687A38121A91C0870001CD40 /* LaunchScreen.xib in Resources */,
+				687A38981A91E1FD0001CD40 /* Level15.plist in Resources */,
+				687A380C1A91C0870001CD40 /* AntFrenzyTitle.png in Resources */,
+				687750D51A92D01F00A1C3E2 /* LevelProgress.plist in Resources */,
+				687A380D1A91C0870001CD40 /* AntFrenzyTitleBasic.png in Resources */,
+				D9D16B901AC0CC0700AD7AC0 /* Coin1.png in Resources */,
+				D98E51D21B9285910096A036 /* BugSprayIcon.png in Resources */,
+				687A388E1A91E1FD0001CD40 /* Level5.plist in Resources */,
+				687A38991A91E1FD0001CD40 /* Level16.plist in Resources */,
+				687A38B91A91E1FD0001CD40 /* Level48.plist in Resources */,
+				687A38211A91C0870001CD40 /* LevelIconOneStar.png in Resources */,
+				687A388F1A91E1FD0001CD40 /* Level6.plist in Resources */,
+				687A389D1A91E1FD0001CD40 /* Level20.plist in Resources */,
+				687A389E1A91E1FD0001CD40 /* Level21.plist in Resources */,
+				687A381A1A91C0870001CD40 /* BugSpray.atlas in Resources */,
+				687A381D1A91C0870001CD40 /* Fireball.atlas in Resources */,
+				687A381E1A91C0870001CD40 /* Fireball2.atlas in Resources */,
+				D98E51C81B927BA20096A036 /* Background1Top.png in Resources */,
+				D9DB7C591AC8AF4B00FCB256 /* Zapper.atlas in Resources */,
+				687A383E1A91C0870001CD40 /* ZappedAnt.png in Resources */,
+				687A38271A91C0870001CD40 /* Lock.png in Resources */,
+				687A38201A91C0870001CD40 /* LevelIconNoStars.png in Resources */,
+				687A383B1A91C0870001CD40 /* X4.png in Resources */,
+				687A383C1A91C0870001CD40 /* X5.png in Resources */,
+				687A38A61A91E1FD0001CD40 /* Level29.plist in Resources */,
+				687A38131A91C0870001CD40 /* Main.storyboard in Resources */,
+				687A388B1A91E1FD0001CD40 /* Level2.plist in Resources */,
+				687A388C1A91E1FD0001CD40 /* Level3.plist in Resources */,
+				687A38911A91E1FD0001CD40 /* Level8.plist in Resources */,
+				687A38961A91E1FD0001CD40 /* Level13.plist in Resources */,
+				687A389C1A91E1FD0001CD40 /* Level19.plist in Resources */,
+				687A38A01A91E1FD0001CD40 /* Level23.plist in Resources */,
+				687A38A21A91E1FD0001CD40 /* Level25.plist in Resources */,
+				687A38A31A91E1FD0001CD40 /* Level26.plist in Resources */,
+				687A38A41A91E1FD0001CD40 /* Level27.plist in Resources */,
+				687A38A91A91E1FD0001CD40 /* Level32.plist in Resources */,
+				687A38AA1A91E1FD0001CD40 /* Level33.plist in Resources */,
+				687A38B51A91E1FD0001CD40 /* Level44.plist in Resources */,
+				687A38B31A91E1FD0001CD40 /* Level42.plist in Resources */,
+				687A38B01A91E1FD0001CD40 /* Level39.plist in Resources */,
+				687A38B61A91E1FD0001CD40 /* Level45.plist in Resources */,
+				687A38B71A91E1FD0001CD40 /* Level46.plist in Resources */,
+				687A38BB1A91E1FD0001CD40 /* Level50.plist in Resources */,
+				687A37A81A91B60A0001CD40 /* Main.storyboard in Resources */,
+				687A38171A91C0870001CD40 /* basicAnt.atlas in Resources */,
+				687A38291A91C0870001CD40 /* MoneyAnt.atlas in Resources */,
+				687A38311A91C0870001CD40 /* ScoresButtonOff.png in Resources */,
+				D98E51E21B92870C0096A036 /* TapIcon.png in Resources */,
+				687A381F1A91C0870001CD40 /* LeftArrow.png in Resources */,
+				687A38261A91C0870001CD40 /* LevelsButtonSelected.png in Resources */,
+				687A380F1A91C0870001CD40 /* AntsBackground.mp3 in Resources */,
+				687A382C1A91C0870001CD40 /* PlayButtonOff.png in Resources */,
+				687A380E1A91C0870001CD40 /* AntOnFire.png in Resources */,
+				687A381C1A91C0870001CD40 /* Fire.wav in Resources */,
+				687A383D1A91C0870001CD40 /* Zap.wav in Resources */,
+				687A380B1A91C0870001CD40 /* 80s Pop Beat 07.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687A37B01A91B60B0001CD40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		687A37901A91B6090001CD40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D4CE961AA81B2800102AEE /* LevelSelectPageContentViewController.m in Sources */,
+				687A384B1A91CDA60001CD40 /* MyScene.m in Sources */,
+				687A379D1A91B6090001CD40 /* AppDelegate.m in Sources */,
+				687A37D01A91BCBE0001CD40 /* StoreViewController.m in Sources */,
+				D9D41EF61ABE140400CA3C3F /* ZapArea.m in Sources */,
+				687A384D1A91CDA60001CD40 /* Ant.m in Sources */,
+				687A38531A91D4230001CD40 /* GameViewController.m in Sources */,
+				D941293D1B9A2D21001C839B /* LevelOverViewController.m in Sources */,
+				687A384F1A91CDA60001CD40 /* Level.m in Sources */,
+				687A384E1A91CDA60001CD40 /* User.m in Sources */,
+				687A384C1A91CDA60001CD40 /* LevelOverScene.m in Sources */,
+				D960379C1AA647A600D6E2D7 /* WeaponsPageContentViewController.m in Sources */,
+				687A379A1A91B6090001CD40 /* main.m in Sources */,
+				687A37CD1A91BC6E0001CD40 /* ViewController.m in Sources */,
+				687A37D31A91BCD90001CD40 /* LevelSelectViewController.m in Sources */,
+				682F22E71AA3B8C200A759EB /* StorePageContentViewController.m in Sources */,
+				687A38501A91CDA60001CD40 /* weapon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687A37AE1A91B60B0001CD40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687A37B91A91B60B0001CD40 /* Ant_FrenzyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		687A37B41A91B60B0001CD40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 687A37931A91B6090001CD40 /* Ant Frenzy */;
+			targetProxy = 687A37B31A91B60B0001CD40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		687A37A61A91B60A0001CD40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				687A37A71A91B60A0001CD40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		687A37AB1A91B60B0001CD40 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				687A37AC1A91B60B0001CD40 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		687A37DC1A91C0870001CD40 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				687A37DD1A91C0870001CD40 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		687A37DE1A91C0870001CD40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				687A37DF1A91C0870001CD40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		687A37BA1A91B60B0001CD40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		687A37BB1A91B60B0001CD40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		687A37BD1A91B60B0001CD40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JQNK74493B;
+				INFOPLIST_FILE = "Ant Frenzy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thirdboot.Ant-Frenzy.test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		687A37BE1A91B60B0001CD40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JQNK74493B;
+				INFOPLIST_FILE = "Ant Frenzy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thirdboot.Ant-Frenzy.test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		687A37C01A91B60B0001CD40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ant FrenzyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ant Frenzy.app/Ant Frenzy";
+			};
+			name = Debug;
+		};
+		687A37C11A91B60B0001CD40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ant FrenzyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ant Frenzy.app/Ant Frenzy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		687A378F1A91B6080001CD40 /* Build configuration list for PBXProject "Ant Frenzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687A37BA1A91B60B0001CD40 /* Debug */,
+				687A37BB1A91B60B0001CD40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687A37BC1A91B60B0001CD40 /* Build configuration list for PBXNativeTarget "Ant Frenzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687A37BD1A91B60B0001CD40 /* Debug */,
+				687A37BE1A91B60B0001CD40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687A37BF1A91B60B0001CD40 /* Build configuration list for PBXNativeTarget "Ant FrenzyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687A37C01A91B60B0001CD40 /* Debug */,
+				687A37C11A91B60B0001CD40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 687A378C1A91B6080001CD40 /* Project object */;
+}

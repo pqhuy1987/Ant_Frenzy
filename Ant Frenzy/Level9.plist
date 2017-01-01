@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AntsToGenerate</key>
+	<integer>100</integer>
+	<key>AntLimit</key>
+	<integer>90</integer>
+	<key>SpawnSpeed</key>
+	<integer>2</integer>
+	<key>Unlocked</key>
+	<false/>
+	<key>BackgroundMusic</key>
+	<string></string>
+	<key>ThreeStarScore</key>
+	<integer>5</integer>
+	<key>TwoStarScore</key>
+	<integer>10</integer>
+	<key>OneStarScore</key>
+	<integer>15</integer>
+	<key>MoneyBagAntLimit</key>
+	<integer>100</integer>
+	<key>ArmoredAntLimit</key>
+	<integer>50</integer>
+	<key>FastAntLimit</key>
+	<integer>35</integer>
+	<key>BasicAntLimit</key>
+	<integer>5</integer>
+	<key>BackgroundName</key>
+	<string>Background</string>
+</dict>
+</plist>
